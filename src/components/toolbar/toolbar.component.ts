@@ -7,15 +7,15 @@ import './toolbar.scss';
 @Component({
   selector: 'swui-toolbar',
   template: `
-    <header class="Grid">
-      <div class="Grid-cell u-size1of2 toolbar-title-col">
+    <header class="flex-row">
+      <div class="col toolbar-title-col">
         <ng-content *ngIf="!title" select="swui-toolbar-title"></ng-content>
         <h2 class="toolbar-title" *ngIf="title">
           {{title}}
           <small *ngIf="subtitle">{{subtitle}}</small>
         </h2>
       </div>
-      <div class="Grid-cell u-sizeFill toolbar-content-col">
+      <div class="col toolbar-content-col text-right">
         <ng-content *ngIf="!menu" select="swui-toolbar-content"></ng-content>
         <ul class="horizontal-menu menu" *ngIf="menu">
           <li *ngFor="let item of toolbarItems">

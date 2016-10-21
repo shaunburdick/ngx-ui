@@ -85,12 +85,13 @@
     "zone.js": "^0.6.25"
   },
   "dependencies": {
-    "ng2-file-upload": "^1.1.2",
     "angular2-moment": "^1.0.0-beta.5",
     "codemirror": "^5.18.2",
+    "core-flex-grid": "^1.0.1",
     "highlight.js": "^9.7.0",
     "moment": "^2.15.1",
     "ng2-codemirror": "^1.0.1",
+    "ng2-file-upload": "^1.1.2",
     "normalize.css": "^4.2.0"
   }
 }

@@ -8,4 +8,5 @@ Style and Component Library for the Swimlane
 
 ## Frameworks
 - [sass](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
-- [suitcss](https://github.com/suitcss/suit/blob/master/doc/api.md)
+- [core-flex-grid](https://splintercode.github.io/core-flex-grid/)
+- [normalize.css](https://necolas.github.io/normalize.css/)

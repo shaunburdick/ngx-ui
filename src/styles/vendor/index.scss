@@ -8,8 +8,15 @@
 @import "~normalize.css/normalize.css";
 
 /**
+ * Flexbox Grid System
+ *
+ * https://splintercode.github.io/core-flex-grid/
+ */
+ @import "~core-flex-grid/dist/core-flex-grid.css";
+
+/**
  * Style tools for UI components
  *
  * https://github.com/suitcss/suit
  */
-@import "suitcss.scss";
+// @import "suitcss.scss";

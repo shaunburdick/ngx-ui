@@ -21,7 +21,6 @@ $calendar-day-text: $color-text-med;
 
   .title-row {
     background: $calendar-title-bg;
-    padding: .4rem .5rem;
     font-weight: 500;
     line-height: 1.8rem;
 
@@ -45,6 +44,7 @@ $calendar-day-text: $color-text-med;
     text-align: center;
     width: 1.8rem;
     height: 1.8rem;
+    display: inline-block;
   }
 
   .day-container {

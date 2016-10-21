@@ -16,40 +16,44 @@ const CALENDAR_VALUE_ACCESSOR = {
   providers: [CALENDAR_VALUE_ACCESSOR],
   template: `
     <div class="swui-calendar" tabindex="0">
-      <div class="title-row u-flex">
-        <button
-          type="button"
-          class="prev-month u-sizeFit"
-          [disabled]="disabled"
-          title="Previous Month"
-          (click)="prevMonth()">
-          <span class="icon-arrow-left"></span>
-        </button>
-        <span class="current-month u-sizeFill u-textCenter">
+      <div class="flex-row--stretch flex-row--middle flex-row--gutter-none title-row">
+        <div class="col-2 text-center">
+          <button
+            type="button"
+            class="prev-month"
+            [disabled]="disabled"
+            title="Previous Month"
+            (click)="prevMonth()">
+            <span class="icon-arrow-left"></span>
+          </button>
+        </div>
+        <div class="current-month col-8 text-center">
           {{ activeDate | amDateFormat: 'MMMM YYYY' }}
-        </span>
-        <button
-          type="button"
-          class="next-month u-sizeFit"
-          title="Next Month"
-          [disabled]="disabled"
-          (click)="nextMonth()">
-          <span class="icon-arrow-right"></span>
-        </button>
+        </div>
+        <div class="col-2 text-center">
+          <button
+            type="button"
+            class="next-month col-2"
+            title="Next Month"
+            [disabled]="disabled"
+            (click)="nextMonth()">
+            <span class="icon-arrow-right"></span>
+          </button>
+        </div>
       </div>
-      <div class="day-name-row u-flex u-flexRow">
+      <div class="day-name-row flex-row--stretch">
         <div
-          class="day-name FlexItem"
+          class="day-name col"
           *ngFor="let d of daysOfWeek">
           {{d}}
         </div>
       </div>
       <div class="day-container">
         <div
-          class="day-row u-flex u-flexRow"
+          class="day-row flex-row--stretch"
           *ngFor="let week of weeks">
           <div
-            class="day-cell FlexItem"
+            class="day-cell col"
             *ngFor="let day of week">
             <button
               *ngIf="day.num"
